@@ -3,8 +3,8 @@ const axios = require("axios");
 const app = express();
 const port = 3000;
 
-const clientID = "0a67f4ab-eae1-4458-b195-fdc5dd5128ba";
-const clientSecret = "mwqrhjkqBNAeVvEk";
+const clientID = "ced2f1dd-79a5-4d34-a923-bb4d68135490";
+const clientSecret = "WIfydiQsaVhvqQxm";
 const testServerBaseURL = "http://20.244.56.144/test";
 const minPrice = 0;
 const cors = require("cors");
@@ -13,12 +13,12 @@ let accessToken = "";
 const authenticate = async () => {
   try {
     const response = await axios.post(`${testServerBaseURL}/auth`, {
-      companyName: "Bhawansh",
+      companyName: "Ataf Ali",
       clientID: clientID,
       clientSecret: clientSecret,
-      ownerName: "Bhawansh",
-      ownerEmail: "bhawanshbaleja@gmail.com",
-      rollNo: "11620803121",
+      ownerName: "Ataf Ali",
+      ownerEmail: "alialiataf1234@gmail.com",
+      rollNo: "13220803121",
     });
     accessToken = response.data.access_token;
   } catch (error) {
